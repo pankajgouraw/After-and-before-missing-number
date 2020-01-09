@@ -226,13 +226,13 @@ $(function() {
             }
 
         }
-        if (userAns == 5) {
+        if (userAns == 3) {
             $('#next').hide();
             $('#playAgain').show();
 
         }
 
-        if(didCorrect==5){
+        if(didCorrect==3){
             $('#nextLevel').removeAttr('disabled');
         }
   })    
@@ -261,7 +261,7 @@ $(function() {
             $(value).css({'backgroundImage':'url(img/correct.png)'});
         })
 
-        if (userAns == 5) {
+        if (userAns == 3) {
             $('#next').hide();
         }else{
             $('#next').show();

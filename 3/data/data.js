@@ -1,9 +1,9 @@
-const headerText = 'Between and After Number 1000 to 9999';
+const headerText = 'Before and After Number 10000 to 99999';
 const headerInstructionColor = '#000';
 // const Instruction = 'Arrange the Numbers in Ascending Order.';
 const bg = 'linear-gradient(rgb(218, 218, 218), rgb(134, 134, 134))';
 const ascending = true;
-const min = 1000; //exclusive
-const max = 9999; // inclusive // subtract 2 in expected max number
+const min = 10000; //exclusive
+const max = 99990; // inclusive // subtract 2 in expected max number
 // const optionMin = 0;
 // const optionMax = 9;

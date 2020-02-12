@@ -1,4 +1,4 @@
-const headerText = 'Before and After Number 10000 to 99999';
+const headerText = 'Before and After Number';
 const headerInstructionColor = '#000';
 // const Instruction = 'Arrange the Numbers in Ascending Order.';
 const bg = 'linear-gradient(rgb(218, 218, 218), rgb(134, 134, 134))';

@@ -58,12 +58,16 @@ $(function() {
                       <div class="noDrop dropContainer">${randNumber}</div>
                       <div class="drop dropContainer" data-user='' data-ans='${rand1}'></div>
                   </div>`;
+                  $('.numContainer').append(`<div class="drag">${randNumber-1}</div>`);
+                  //console.log('add',randNumber-1);
                  oddEven = false;
             }else{
                 html = `<div class="quest" >
                       <div class="drop dropContainer" data-user='' data-ans='${rand1}'></div>
                       <div class="noDrop dropContainer">${randNumber+2}</div>
                   </div>`;
+                  $('.numContainer').append(`<div class="drag">${randNumber+3}</div>`);
+                   //console.log('minus',randNumber+3);
                 oddEven = true;
             }
 
@@ -72,10 +76,10 @@ $(function() {
         } //end for loop
 
                 // loop for add more options
-        for(let i=0; i<2; i++){
-            optionRand = Math.floor(Math.random() * (max - min) + 1) + min;
-            $('.numContainer').append(`<div class="drag">${optionRand}</div>`);
-        }
+        // for(let i=0; i<2; i++){
+        //     optionRand = Math.floor(Math.random() * (max - min) + 1) + min;
+        //     $('.numContainer').append(`<div class="drag">${optionRand}</div>`);
+        // }
     }
 
     // function for drag and drop
@@ -125,7 +129,7 @@ $(function() {
         // for(let i=0; i<3; i++){
             $.each($('.drag'), function(index, value){
                 // $(value).css({ 'order': Math.floor(Math.random() * (optionMax - optionMin) + 1) + optionMin });
-                $(value).css({ 'order': Math.floor((Math.random() * 5) + 1) });
+                $(value).css({ 'order': Math.floor(Math.random() * 8) });
             })
             // $(('.drag')[i]).css({ 'order': Math.floor((Math.random() * 3) + 1) });
          // }
